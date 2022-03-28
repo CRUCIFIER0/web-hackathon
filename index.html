@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="style.css" rel="stylesheet">
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">  
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'>
+    </script>
+        <script src='jquery.firstVisitPopup.js'></script>
+        <script>
+            $(function () {
+                $('#my-welcome-message').firstVisitPopup({
+                    cookieName: 'homepag1e',
+                    showAgainSelector: '#show-message'
+                });
+            });
+        </script>
+</head>
+  <body style="margin-inline: 200px; background-color: #F5F9FC;">
+
+    
+
+
+    <header> 
+      <h2 style="text-align: center; font-family: 'Poppins', sans-serif;
+      font-size:210%;
+      font-weight: 700;
+      padding-block-start: 15px;
+    
+      background-color: white;
+      margin: 0;">ALADDIN</h2>
+      <hr>
+      
+    </header>
+
+
+    <div id='my-welcome-message'>
+      <div class="card" style="width: 45rem; height: 20rem; padding-inline: 15px; border-radius: 0.75rem; box-shadow:0 3px 3px -1px rgb(10 22 70 / 10%), 0 0 1px 0 rgb(10 22 70 / 6%);">
+        <div class="card-body">
+          <h4 class="card-title" id="main-text" style="font-weight: 700; font-size: 120%;">Input</h4>
+          <hr>
+            <div class="d-flex flex-row" style="padding-block-start:10px; padding-block-end: 30px; align-items: center;">
+                <div style="padding-inline: 30px;" id="main-text"><p>Client name?</p></div>
+            
+                <select class="form-select" aria-label="Default select example" id="dropdown">
+                  <option id="dropdown-item-text" selected>DEV</option>
+                  <option id="dropdown-item-text" value="2">BLK</option>
+                  <option id="dropdown-item-text" value="3">TST</option>
+                  
+                </select>
+                
+                
+
+                
+
+                <div><h3 style="padding-inline: 30px; " id="main-text">Intermittent?</h></div>
+
+                <div class="form-check form-switch" style="align-items: center;" >
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                </div>
+                
+            </div>
+
+            <div class="d-flex flex-row" style="padding-inline: 30px;align-items: center;">
+                <h3 id="main-text">API / URL endpoint?</h3>
+                
+                <div  style="width: 20rem; padding-inline: 30px;"><input id="form" type="email" class="form-control" id="exampleFormControlInput1" placeholder="dev.blackrock.com/api/"></div>
+            </div>
+
+            <div style="padding-block-start: 38px; padding-inline-start: 150px;align-items: center;" >
+                <button type="button" class="btn demo-btn first-demo-btn" >Route Information</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+    <!-- First row (inut and logs)-->
+    <div class="d-flex flex-row">
+        <!--input-->
+        <div class="card" style="width: 45rem; height: 20rem; padding-inline: 15px; border-radius: 0.75rem; box-shadow:0 3px 3px -1px rgb(10 22 70 / 10%), 0 0 1px 0 rgb(10 22 70 / 6%);">
+            <div class="card-body">
+              <h4 class="card-title" id="main-text" style="font-weight: 700; font-size: 120%;">Input</h4>
+              <hr>
+                <div class="d-flex flex-row" style="padding-block-start:10px; padding-block-end: 30px; align-items: center;">
+                    <div style="padding-inline: 30px;" id="main-text"><p>Client name?</p></div>
+                
+                    <select class="form-select" aria-label="Default select example" id="dropdown">
+                      <option id="dropdown-item-text" selected>DEV</option>
+                      <option id="dropdown-item-text" value="2">BLK</option>
+                      <option id="dropdown-item-text" value="3">TST</option>
+                      
+                    </select>
+                    
+                    
+
+                    
+
+                    <div><h3 style="padding-inline: 30px; " id="main-text">Intermittent?</h></div>
+
+                    <div class="form-check form-switch" style="align-items: center;" >
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                    </div>
+                    
+                </div>
+
+                <div class="d-flex flex-row" style="padding-inline: 30px;align-items: center;">
+                    <h3 id="main-text">API / URL endpoint?</h3>
+                    
+                    <div  style="width: 20rem; padding-inline: 30px;"><input id="form" type="email" class="form-control" id="exampleFormControlInput1" placeholder="dev.blackrock.com/api/"></div>
+                </div>
+
+                <div style="padding-block-start: 38px; padding-inline-start: 150px;align-items: center;" >
+                    <button type="button" class="btn demo-btn first-demo-btn" >Route Information</button>
+                </div>
+            </div>
+        </div>
+        <!-- end input -->
+
+
+        <!-- LOGS section-->
+        <div class="card" style="width:60rem;margin-left: 40px; padding-inline: 15px;  border-radius: 0.75rem; box-shadow:0 3px 3px -1px rgb(10 22 70 / 10%), 0 0 1px 0 rgb(10 22 70 / 6%); ">
+        <img class="card-img-top" src="holder.js/100px180/" alt="">
+        <div class="card-body">
+            <h4 class="card-title" id="main-text" style="font-weight: 700; font-size: 120%;">Logs</h4>
+            <hr>
+            <p id="normal-text" class="card-text" style="text-align: justify; "> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eligendi enim impedit, eos minus provident, debitis repudiandae vitae nesciunt incidunt iure sint distinctio magnam illum labore, amet veniam quod asperiores.</p>
+        </div>
+        </div>
+    </div>
+    
+
+
+    <!-- graph section -->
+    <div class="card" style="padding-inline:15px;padding-block:15px; margin-top: 40px;  border-radius: 0.75rem; box-shadow:0 3px 3px -1px rgb(10 22 70 / 10%), 0 0 1px 0 rgb(10 22 70 / 6%);" >
+      <img class="card-img-top" src="holder.js/100px180/" alt="">
+      <div class="card-body" id="custom1">
+        
+        <p class="card-text" id="graph-text">Route is displayed based on the configurations files of the server.<br>
+          Click on each server to get more information.</p>
+          <hr>
+      </div>
+    </div>
+
+  
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="script.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  
+</body>
+</html>
