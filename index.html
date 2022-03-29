@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -25,9 +25,10 @@
             });
         </script>
 </head>
-  <body style="margin-inline: 200px; background-color: #F5F9FC;">
+  <body id="body-style" >
 
     
+
 
 
     <header> 
@@ -42,7 +43,7 @@
       
     </header>
 
-
+    <!-- pop up js-->
     <div id='my-welcome-message'>
       <div class="card" style="width: 45rem; height: 20rem; padding-inline: 15px; border-radius: 0.75rem; box-shadow:0 3px 3px -1px rgb(10 22 70 / 10%), 0 0 1px 0 rgb(10 22 70 / 6%);">
         <div class="card-body">
@@ -82,14 +83,38 @@
             </div>
         </div>
     </div>
-  </div>
+    </div>
 
-    <!-- First row (inut and logs)-->
-    <div class="d-flex flex-row">
-        <!--input-->
-        <div class="card" style="width: 45rem; height: 20rem; padding-inline: 15px; border-radius: 0.75rem; box-shadow:0 3px 3px -1px rgb(10 22 70 / 10%), 0 0 1px 0 rgb(10 22 70 / 6%);">
+
+    <!--top input-->
+    <div class="card" id="top-input">
+      <p id="main-text" style="padding-inline-end: 30px;">Client name?</p>
+      <select class="form-select" aria-label="Default select example" id="dropdown" style="margin-block: 5px;">
+          <option id="dropdown-item-text" selected>DEV</option>
+          <option id="dropdown-item-text" value="2">BLK</option>
+          <option id="dropdown-item-text" value="3">TST</option>
+          
+        </select>
+        <div><h3 style="padding-inline: 20px; " id="main-text">Intermittent?</h></div>
+
+          <div class="form-check form-switch" style="align-items: center;" >
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+              <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+          </div>
+          <h3 id="main-text" style="padding-inline-start: 20px;">API / URL endpoint?</h3>
+                  
+          <div  style="width: 20rem; padding-inline: 30px;"><input id="form" type="email" class="form-control" id="exampleFormControlInput1" placeholder="dev.blackrock.com/api/"></div>
+  
+          <button type="button" class="btn demo-btn first-demo-btn" onclick="myFunction1()" >Route Information</button>
+          <hr>
+      </div>
+
+
+   
+    <!--input-->
+    <div class="card" id="mob-input" >
             <div class="card-body">
-              <h4 class="card-title" id="main-text" style="font-weight: 700; font-size: 120%;">Input</h4>
+              <h4 class="card-title" style="font-weight: 700; font-size: 120%;">Input</h4>
               <hr>
                 <div class="d-flex flex-row" style="padding-block-start:10px; padding-block-end: 30px; align-items: center;">
                     <div style="padding-inline: 30px;" id="main-text"><p>Client name?</p></div>
@@ -121,28 +146,22 @@
                 </div>
 
                 <div style="padding-block-start: 38px; padding-inline-start: 150px;align-items: center;" >
-                    <button type="button" class="btn demo-btn first-demo-btn" >Route Information</button>
+                    <button type="button" class="btn demo-btn first-demo-btn" onclick="myFunction()">Route Information</button>
                 </div>
             </div>
-        </div>
-        <!-- end input -->
-
-
-        <!-- LOGS section-->
-        <div class="card" style="width:60rem;margin-left: 40px; padding-inline: 15px;  border-radius: 0.75rem; box-shadow:0 3px 3px -1px rgb(10 22 70 / 10%), 0 0 1px 0 rgb(10 22 70 / 6%); ">
-        <img class="card-img-top" src="holder.js/100px180/" alt="">
-        <div class="card-body">
-            <h4 class="card-title" id="main-text" style="font-weight: 700; font-size: 120%;">Logs</h4>
-            <hr>
-            <p id="normal-text" class="card-text" style="text-align: justify; "> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eligendi enim impedit, eos minus provident, debitis repudiandae vitae nesciunt incidunt iure sint distinctio magnam illum labore, amet veniam quod asperiores.</p>
-        </div>
-        </div>
     </div>
+    
+  
+
+
+        
+        
+   
     
 
 
     <!-- graph section -->
-    <div class="card" style="padding-inline:15px;padding-block:15px; margin-top: 40px;  border-radius: 0.75rem; box-shadow:0 3px 3px -1px rgb(10 22 70 / 10%), 0 0 1px 0 rgb(10 22 70 / 6%);" >
+    <div class="card" id="graph-body" >
       <img class="card-img-top" src="holder.js/100px180/" alt="">
       <div class="card-body" id="custom1">
         
@@ -152,6 +171,16 @@
       </div>
     </div>
 
+
+<!-- LOGS section-->
+    <div class="card" id="log-body" >
+      <img class="card-img-top" src="holder.js/100px180/" alt="">
+      <div class="card-body">
+          <h4 class="card-title" id="main-text" style="font-weight: 700; font-size: 120%;">Logs</h4>
+          <hr>
+          <p id="normal-text" class="card-text" style="text-align: justify; "> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eligendi enim impedit, eos minus provident, debitis repudiandae vitae nesciunt incidunt iure sint distinctio magnam illum labore, amet veniam quod asperiores.</p>
+      </div>
+    </div>
   
     <!-- Bootstrap JavaScript Libraries -->
     <script src="script.js"></script>
