@@ -10,3 +10,14 @@
             showAgainSelector: '#show-message'
         });
     });
+
+    function myFunction() {
+        document.getElementById('top-input').style.cssText = 'display:flex';
+        document.getElementById('mob-input').style.cssText = 'display:none';
+        document.getElementById('log-body').style.cssText = 'display:flex';
+        document.getElementById('graph-body').style.cssText = 'display:flex';
+    }
+
+    function myFunction1() {
+        
+    }
