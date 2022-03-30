@@ -4,12 +4,7 @@
         $(btnObj).val($(this).text());
     });
 
-    $(function () {
-        $('#my-welcome-message').firstVisitPopup({
-            cookieName: 'homepag1e',
-            showAgainSelector: '#show-message'
-        });
-    });
+   
 
     function myFunction() {
         document.getElementById('mob-input').style.cssText = 'display:none';
@@ -26,7 +21,34 @@
     }
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
-      }
-    function myFunction1() {
-        
     }
+
+    $( function() {
+        var availableTags = [
+          "ActionScript",
+          "AppleScript",
+          "Asp",
+          "BASIC",
+          "C",
+          "C++",
+          "Clojure",
+          "COBOL",
+          "ColdFusion",
+          "Erlang",
+          "Fortran",
+          "Groovy",
+          "Haskell",
+          "Java",
+          "JavaScript",
+          "Lisp",
+          "Perl",
+          "PHP",
+          "Python",
+          "Ruby",
+          "Scala",
+          "Scheme"
+        ];
+        $( "#tags" ).autocomplete({
+          source: availableTags
+        });
+      } );
