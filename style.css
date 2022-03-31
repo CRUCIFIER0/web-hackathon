@@ -4,15 +4,11 @@
   
 }
 
-@media screen and (max-width: 600px) {
-  #body-style {
-    margin-inline: 10px;
-  }
-}
+
 
 #top-input {
   justify-content: center;
-  width: 1300px;
+  width: 85%;
   margin: 0 auto;
   padding-block: 30px;
   padding-inline: 30px;
@@ -23,12 +19,58 @@
   border-radius: 0.75rem;
   margin-bottom: 15px;
 }
+#ip-fields{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+#entire-first-fields{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
 
+@media screen and (max-width: 1280px) {
+  #top-input{
+    width: 100%;
+  }
+  #body-style{
+    margin-inline: 150px;
+  }
+}
+@media screen and (max-width: 1000px){
+  #entire-first-fields{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  #ip-fields{
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 800px){
+  #body-style {
+ 
+    margin-inline: 10px;
+    
+  }
+}
+
+@media screen and (min-width:800px) and  (max-width: 1000px){
+  #body-style{
+    margin-inline: 100px;
+  }
+}
 @media screen and (max-width: 600px) {
   #first-row {
     display: flex;
     flex-direction: column;
   }
+  #ip-fields{
+    flex-direction: column;
+  }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -180,6 +222,8 @@ button.first-demo-btn:active {
   border-radius: 1.5rem;
   border: 1px solid black;
   background-color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 
 #graph-body {
