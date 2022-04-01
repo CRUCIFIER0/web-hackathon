@@ -8,7 +8,7 @@
 
 #top-input {
   justify-content: center;
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
   padding-block: 30px;
   padding-inline: 30px;
@@ -93,7 +93,7 @@
 }
 
 #dropdown {
-  width: 7rem;
+  width: 10rem;
 
   font-family: "Poppins", sans-serif;
   font-size: 90%;
@@ -212,9 +212,8 @@ button.first-demo-btn:active {
 
 
 #more-details{
-  align-items: center;
-  justify-items: center;
-  width: fit-content;
+ 
+  width:fit-content;
   height: fit-content;
   padding-block: 12px;
   padding-inline: 20px;
@@ -244,6 +243,34 @@ button.first-demo-btn:active {
   color: grey;
 }
 
+#message-area {
+  display: flex;
+  flex-direction: row;
+  
+  align-items: center;
+}
+#message{
+  width: 90%;
+  padding-right: 20px;
+}
+#message-body{
+  background-color: #f5f9fc;
+  box-shadow: 0 3px 3px -1px rgb(10 22 70 / 10%), 0 0 1px 0 rgb(10 22 70 / 6%);
+  padding-block: 0px;
+  border-radius: 0.75rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 75%;
+  font-weight: 400;
+}
+#deep-dive{
+ 
+  width: 10%;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 90%;
+  font-weight: 400;
+}
+
 #mob-input {
 
   width: auto;
@@ -254,7 +281,7 @@ button.first-demo-btn:active {
   border-radius: 0.75rem;
   box-shadow: 0 3px 3px -1px rgb(10 22 70 / 10%), 0 0 1px 0 rgb(10 22 70 / 6%);
 }
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1600px) {
   #mob-input {
     margin-inline: 150px;
     width: auto;
@@ -301,6 +328,17 @@ button.first-demo-btn:active {
   transition: visibility 0s, opacity 0.3s ease-in;
 
 }
+#wiki-body {
+  visibility: hidden;
+  width: 100%;
+  margin-top: 20px;
+  padding-inline: 15px;
+  border-radius: 0.75rem;
+  box-shadow: 0 3px 3px -1px rgb(10 22 70 / 10%), 0 0 1px 0 rgb(10 22 70 / 6%);
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease-in;
+
+}
 
 @media screen and (max-width: 400px) {
   #log-body {
@@ -314,3 +352,41 @@ button.first-demo-btn:active {
   justify-content: center;
 }
 
+
+#row-of-links {
+  display: flex;
+  flex-direction: row;
+}
+
+#static-links{
+  padding-inline-end: 20px;
+  width: 40%;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 80%;
+  font-weight: 400;
+}
+#dynamic-links{
+  padding-inline: 20px;
+  border-left: 0.5px solid rgba(0, 0, 0, 0.2); ;
+  width: 60%;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 80%;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 700px){
+  #row-of-links{
+    flex-direction: column;
+  }
+  #static-links{
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  #dynamic-links{
+    border-left: 0px solid rgba(0, 0, 0, 0.2); ;
+    width: 100%;
+    padding-inline-start: 0px;
+  }
+}

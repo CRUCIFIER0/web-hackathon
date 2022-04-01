@@ -25,6 +25,7 @@
         sleep(100).then(() => {
             
             document.getElementById('log-body').style.cssText = 'visibility: visible; opacity: 1;';
+            document.getElementById('wiki-body').style.cssText = 'visibility: visible; opacity: 1;';
             document.getElementById('more-details').style.cssText = 'display:none';
          });
          
