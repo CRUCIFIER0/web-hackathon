@@ -26,9 +26,9 @@
             
             document.getElementById('log-body').style.cssText = 'visibility: visible; opacity: 1;';
             document.getElementById('wiki-body').style.cssText = 'visibility: visible; opacity: 1;';
+            document.getElementById('tele-body').style.cssText = 'visibility: visible; opacity: 1;';
             document.getElementById('more-details').style.cssText = 'display:none;';
-            document.getElementById('message').style.cssText = 'width:100%; padding-right:0px;';
-            document.getElementById('deep-dive').style.cssText = 'width:0%';
+            document.getElementById('more-details').style.cssText = '';
          });
          
          

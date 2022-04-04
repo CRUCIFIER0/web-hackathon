@@ -7,6 +7,11 @@
 
 
 #top-input {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  
+  z-index: 1;
   justify-content: center;
   width: 100%;
   margin: 0 auto;
@@ -250,7 +255,7 @@ button.first-demo-btn:active {
   align-items: center;
 }
 #message{
-  width: 90%;
+  width: 85%;
   padding-right: 20px;
 }
 #message-body{
@@ -263,7 +268,8 @@ button.first-demo-btn:active {
   font-weight: 400;
 }
 #deep-dive{
- 
+  margin-right: 0;
+  margin-left: auto;
   width: 10%;
   background-color: white;
   font-family: "Poppins", sans-serif;
@@ -390,3 +396,46 @@ button.first-demo-btn:active {
     padding-inline-start: 0px;
   }
 }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+#actions-container{
+  display: flex;
+  flex-direction: row;
+
+}
+
+#tele-body {
+  visibility: hidden;
+  width: 100%;
+  margin-top: 20px;
+  padding-inline: 15px;
+  border-radius: 0.75rem;
+  box-shadow: 0 3px 3px -1px rgb(10 22 70 / 10%), 0 0 1px 0 rgb(10 22 70 / 6%);
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease-in;
